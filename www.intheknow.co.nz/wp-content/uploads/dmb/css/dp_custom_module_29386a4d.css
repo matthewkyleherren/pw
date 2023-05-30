@@ -1,0 +1,52 @@
+.custom-image {
+display: block;
+position: relative;
+}
+
+.custom-image img {
+margin-bottom: 0;
+display: block;
+width: 100%;
+}
+
+.custom-image-box .overlay {
+position: absolute;
+display: block;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+opacity: 0;
+-webkit-transition: all 400ms ease-in-out;
+-moz-transition: all 400ms ease-in-out;
+-o-transition: all 400ms ease-in-out;
+transition: all 400ms ease-in-out;
+}
+
+.custom-image-box:hover .overlay {
+opacity: 1;
+}
+
+.custom-image-box .overlay h4 {
+position: absolute;
+display: block;
+top: 40%;
+left: 0;
+right: 0;
+font-size: 18px;
+line-height: 16px;
+margin-top: -11px;
+text-align: center;
+}
+
+.custom-image-box .overlay .et-pb-icon {
+position: absolute;
+display: block;
+top: 50%;
+left: 0;
+right: 0;
+font-size: 64px;
+line-height: 20px;
+margin-top: 8px;
+text-align: center;
+}

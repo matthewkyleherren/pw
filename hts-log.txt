@@ -1,0 +1,73 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 30 May 2023 14:24:17 at https://www.pornweek.nz +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qYC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" -Y https://www.pornweek.nz -O1 "C:\My Web Sites\pw" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:24:18	Error: 	"Bad Gateway" (502) after 2 retries at link https://www.pornweek.nz/robots.txt (from primary/primary)
+14:24:52	Error: 	"Not Found" (404) at link https://static.hotjar.com/c/hotjar- (from https://www.pornweek.nz/)
+14:29:58	Warning: 	Retry after error 502 (Bad Gateway) at link https://www.pornweek.nz/"https://assets.website-files.com/61af03ac30e53bb54ccb7095/6361bc187ecbe80bf6a789ee_PornWeek-poster-00001.jpg" (from https://www.pornweek.nz/)
+14:29:58	Warning: 	Retry after error 502 (Bad Gateway) at link https://www.pornweek.nz/"https://assets.website-files.com/61af03ac30e53bb54ccb7095/63620615d29481ce159950a6_635a49cec20a8b410cf12800_Story 1-transcode-poster-00001.jpg" (from https://www.pornweek.nz/)
+14:29:58	Warning: 	Retry after error 502 (Bad Gateway) at link https://www.pornweek.nz/"https://assets.website-files.com/61af03ac30e53bb54ccb7095/636201d24bfbf56cb0bdee2e_Story 21-poster-00001.jpg" (from https://www.pornweek.nz/)
+14:29:58	Warning: 	Retry after error 502 (Bad Gateway) at link https://www.pornweek.nz/"https://assets.website-files.com/61af03ac30e53bb54ccb7095/636202f66b1c4fd08c63e992_Story 12 Dark-poster-00001.jpg" (from https://www.pornweek.nz/)
+14:29:58	Warning: 	Retry after error 502 (Bad Gateway) at link https://www.pornweek.nz/"https://assets.website-files.com/61af03ac30e53bb54ccb7095/636203c2fd151138ee2ce75c_Story 4 Dark-poster-00001.jpg" (from https://www.pornweek.nz/)
+14:29:58	Warning: 	Retry after error 502 (Bad Gateway) at link https://www.pornweek.nz/"https://assets.website-files.com/61af03ac30e53bb54ccb7095/63616abcbd16952218901c13_Story 7-poster-00001.jpg" (from https://www.pornweek.nz/)
+14:29:58	Warning: 	Retry after error 502 (Bad Gateway) at link https://www.pornweek.nz/"https://assets.website-files.com/61af03ac30e53bb54ccb7095/63620646d55b3e1fc6222e9d_Story 20-poster-00001.jpg" (from https://www.pornweek.nz/)
+14:30:01	Warning: 	Found for https://www.instagram.com/netsafenz/?hl=en
+14:30:01	Warning: 	File has moved from https://www.instagram.com/netsafenz/?hl=en to https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fnetsafenz%2F%3Fhl%3Den
+14:33:51	Warning: 	Moved Permanently for www.na.studio/robots.txt
+14:33:51	Warning: 	Redirected link is identical because of 'URL Hack' option: www.na.studio/robots.txt and https://www.na.studio/robots.txt
+14:33:51	Warning: 	Warning moved treated for www.na.studio/robots.txt (real one is https://www.na.studio/robots.txt)
+14:33:51	Warning: 	Moved Permanently for www.na.studio/
+14:33:51	Warning: 	Redirected link is identical because of 'URL Hack' option: www.na.studio/ and https://www.na.studio/
+14:33:51	Warning: 	File has moved from www.na.studio/ to https://www.na.studio/
+14:34:21	Error: 	"Method Not Allowed" (405) at link https://thelightproject.co.nz/xmlrpc.php (from https://thelightproject.co.nz/whanau/)
+14:35:17	Warning: 	Moved Permanently for https://thelightproject.co.nz/?p=15
+14:35:17	Warning: 	File has moved from https://thelightproject.co.nz/?p=15 to https://thelightproject.co.nz/whanau/
+14:45:17	Warning: 	Moved Permanently for https://thelightproject.co.nz/the-facts/porn-fact-sheet/
+14:45:17	Warning: 	File has moved from https://thelightproject.co.nz/the-facts/porn-fact-sheet/ to https://thelightproject.co.nz
+14:45:17	Warning: 	Moved Permanently for https://thelightproject.co.nz/?p=13
+14:45:17	Warning: 	File has moved from https://thelightproject.co.nz/?p=13 to https://thelightproject.co.nz/youth/
+14:45:17	Warning: 	Moved Permanently for https://thelightproject.co.nz/?p=67
+14:45:17	Warning: 	File has moved from https://thelightproject.co.nz/?p=67 to https://thelightproject.co.nz/youth/can-porn-affect-us/
+14:45:17	Warning: 	Moved Permanently for https://thelightproject.co.nz/?p=69
+14:45:17	Warning: 	File has moved from https://thelightproject.co.nz/?p=69 to https://thelightproject.co.nz/youth/great-sex-vs-porn-sex/
+14:45:17	Error: 	"Method Not Allowed" (405) at link https://www.intheknow.co.nz/xmlrpc.php (from https://www.intheknow.co.nz/want-to-cut-down/)
+14:48:47	Warning: 	Moved Permanently for https://www.intheknow.co.nz/?p=525
+14:48:47	Warning: 	File has moved from https://www.intheknow.co.nz/?p=525 to https://www.intheknow.co.nz/want-to-cut-down/
+14:49:04	Warning: 	Link https://www.intheknow.co.nz/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+14:52:33	Warning: 	Moved Permanently for https://www.intheknow.co.nz/?p=429
+14:52:33	Warning: 	File has moved from https://www.intheknow.co.nz/?p=429 to https://www.intheknow.co.nz/feeling-uncomfortable/
+14:52:33	Warning: 	Retry after error 502 (Bad Gateway) at link https://www.pornweek.nz/?fb8bfe9b_page=1 (from https://www.pornweek.nz/?fb8bfe9b_page=2)
+14:52:33	Warning: 	Retry after error 502 () at link https://www.pornweek.nz/"https://assets.website-files.com/61af03ac30e53bb54ccb7095/6361bc187ecbe80bf6a789ee_PornWeek-poster-00001.jpg" (from https://www.pornweek.nz/)
+14:52:33	Warning: 	Retry after error 502 () at link https://www.pornweek.nz/"https://assets.website-files.com/61af03ac30e53bb54ccb7095/63620615d29481ce159950a6_635a49cec20a8b410cf12800_Story 1-transcode-poster-00001.jpg" (from https://www.pornweek.nz/)
+14:52:33	Warning: 	Retry after error 502 () at link https://www.pornweek.nz/"https://assets.website-files.com/61af03ac30e53bb54ccb7095/636201d24bfbf56cb0bdee2e_Story 21-poster-00001.jpg" (from https://www.pornweek.nz/)
+14:52:33	Warning: 	Retry after error 502 () at link https://www.pornweek.nz/"https://assets.website-files.com/61af03ac30e53bb54ccb7095/636202f66b1c4fd08c63e992_Story 12 Dark-poster-00001.jpg" (from https://www.pornweek.nz/)
+14:52:33	Warning: 	Retry after error 502 () at link https://www.pornweek.nz/"https://assets.website-files.com/61af03ac30e53bb54ccb7095/636203c2fd151138ee2ce75c_Story 4 Dark-poster-00001.jpg" (from https://www.pornweek.nz/)
+14:52:33	Warning: 	Retry after error 502 (Bad Gateway) at link https://www.pornweek.nz/"https://assets.website-files.com/61af03ac30e53bb54ccb7095/63616abcbd16952218901c13_Story 7-poster-00001.jpg" (from https://www.pornweek.nz/)
+14:52:33	Warning: 	Retry after error 502 (Bad Gateway) at link https://www.pornweek.nz/"https://assets.website-files.com/61af03ac30e53bb54ccb7095/63620646d55b3e1fc6222e9d_Story 20-poster-00001.jpg" (from https://www.pornweek.nz/)
+14:52:34	Error: 	"Forbidden" (403) at link https://netsafe.org.nz/e.src (from https://netsafe.org.nz/)
+14:52:34	Error: 	"Forbidden" (403) at link https://netsafe.org.nz/Firefox/ (from https://netsafe.org.nz/)
+14:52:34	Error: 	"Forbidden" (403) at link https://netsafe.org.nz/feed/ (from https://netsafe.org.nz/)
+14:52:34	Error: 	"Forbidden" (403) at link https://netsafe.org.nz/wp-content/plugins/wp-rocket/assets/img/youtube.png (from https://netsafe.org.nz/)
+14:52:34	Error: 	"Forbidden" (403) at link https://netsafe.org.nz/xmlrpc.php?rsd (from https://netsafe.org.nz/)
+14:52:34	Error: 	"Forbidden" (403) at link https://netsafe.org.nz/wp-includes/wlwmanifest.xml (from https://netsafe.org.nz/)
+14:52:34	Error: 	"Forbidden" (403) at link https://netsafe.org.nz/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnetsafe.org.nz%2F (from https://netsafe.org.nz/)
+14:52:34	Error: 	"Forbidden" (403) at link https://netsafe.org.nz/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnetsafe.org.nz%2F&format=xml (from https://netsafe.org.nz/)
+14:52:34	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://netsafe.org.nz/)
+14:52:37	Error: 	"Forbidden" (403) at link https://netsafe.org.nz/wp-content/uploads/2017/06/ns-Favicon-32x32.png (from https://netsafe.org.nz/)
+14:52:37	Error: 	"Bad Request" (400) at link https://netsafe.org.nz/cdn-cgi/zaraz/s.js?z= (from https://netsafe.org.nz/)
+14:53:26	Error: 	Exit requested by shell or user
+14:53:26	Warning: 	File not added due to mirror cancel: https://netsafe.org.nz/wp-content/uploads/2023/03/MinterEllisonRuddWatts_350x200-300x171-jpg.webp
+14:53:31	Error: 	Exit requested by shell or user
+14:53:31	Error: 	"" (-1) at link https://netsafe.org.nz/advice/plain-language/ (from https://netsafe.org.nz/)
+14:53:31	Error: 	Exit requested by shell or user
+
+HTTrack Website Copier/3.49-2 mirror complete in 29 minutes 14 seconds : 1255 links scanned, 1067 files written (124495193 bytes overall) [87245801 bytes received at 49741 bytes/sec], 51607028 bytes transferred using HTTP compression in 591 files, ratio 24%, 5.3 requests per connection
+(19 errors, 39 warnings, 0 messages)
+* * MIRROR ABORTED! * *
+The current temporary cache is required for any update operation and only contains data downloaded during the present aborted session.
+The former cache might contain more complete information; if you do not want to lose that information, you have to restore it and delete the current cache.
+This can easily be done here by erasing the hts-cache/new.* files]

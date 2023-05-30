@@ -1,0 +1,16 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.vimeo.com	TRUE	/	FALSE	1999999999	__cf_bm	Slr7rDRhOjVEL_E4_wc5fHsrWupOuJ0fAWKacqKTFEs-1685481865-0-AdHl6BTVg0MS18rTOYw5mNiezmBRaKcNLaathlQT8/IYzKMBAYHQKGxtzh5xwSiWeHkjx5mTPuUbp+c6Px1TAlM=
+player.vimeo.com	TRUE	/	FALSE	1999999999	SameSite	None
+.w3.org	TRUE	/	FALSE	1999999999	__cf_bm	4l4fiZeNlSKuQE_tMbxXuGlZbcZ78MZagJ6CHHLPHZw-1685481870-0-AR6J36cOSyyQTqrXEjbXE2bH2Ao9Q1LRnt8PIZXDU3y2lQgnxXOajyv2Ed14b8gqaY1njsfAHcoBIIqG6YsPwn0=
+www.w3.org	TRUE	/	FALSE	1999999999	SameSite	None
+training.education.govt.nz	TRUE	/	FALSE	1999999999	ApplicationGatewayAffinityCORS	ff14166c2d4f35fdcb7f1ff6a1352eca
+training.education.govt.nz	TRUE	/	FALSE	1999999999	SameSite	None
+training.education.govt.nz	TRUE	/	FALSE	1999999999	ApplicationGatewayAffinity	ff14166c2d4f35fdcb7f1ff6a1352eca
+training.education.govt.nz	TRUE	/	FALSE	1999999999	ilp_JSESSIONID	C6D597B7F749815AEA489FD0B25E3C63
+training.education.govt.nz	TRUE	/	FALSE	1999999999	XSRF_COOKIE	LRqAUt9vyisbLYHS78lpprXwnQF9ukyR8AoiEXZ6po0Lde2bYvoUP8tDOyY6cFlzRMgXoZJstbFtXTdZwbieYJ5livZvDcGHzKiSio/XEfw=
+training.education.govt.nz	TRUE	/	FALSE	1999999999	oam.Flash.RENDERMAP.TOKEN	fqhqgystt
+training.education.govt.nz	TRUE	/	FALSE	1999999999	ILALANG	en-GB
+training.education.govt.nz	TRUE	/	FALSE	1999999999	ARRAzureWebFarm	92ca53ad8db4fbb93d4d3b7d8ab54dcf8ffecb2d731f25b0e91ad575d7534c3f
+.facebook.com	TRUE	/	FALSE	1999999999	fr	0meF9lZUWgO1KerpB..BkdmvF.xl.AAA.0.0.BkdmvM.AWV-1m9vgXw
+

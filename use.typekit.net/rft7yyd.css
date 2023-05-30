@@ -1,0 +1,49 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * caliban-std:
+ *   - http://typekit.com/eulas/00000000000000007735a2ce
+ * ff-market-web:
+ *   - http://typekit.com/eulas/0000000000000000773599f6
+ * swing-king:
+ *   - http://typekit.com/eulas/00000000000000007735c001
+ * timberline:
+ *   - http://typekit.com/eulas/00000000000000007735cc72
+ *
+ * © 2009-2023 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2022-05-02 22:47:59 UTC"}*/
+
+@import url("../p.typekit.net/p0083.css?s=1&amp;k=rft7yyd&amp;ht=tk&amp;f=4859.18360.38088.43085&amp;a=12760205&amp;app=typekit&amp;e=css");
+
+@font-face {
+font-family:"ff-market-web";
+src:url("af/9ee3ad/0000000000000000773599f6/30/le196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("woff2"),url("af/9ee3ad/0000000000000000773599f6/30/de196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("woff"),url("af/9ee3ad/0000000000000000773599f6/30/ae196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"caliban-std";
+src:url("af/3e4842/00000000000000007735a2ce/30/le196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("woff2"),url("af/3e4842/00000000000000007735a2ce/30/de196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("woff"),url("af/3e4842/00000000000000007735a2ce/30/ae196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"swing-king";
+src:url("af/72878e/00000000000000007735c001/30/le196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("woff2"),url("af/72878e/00000000000000007735c001/30/de196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("woff"),url("af/72878e/00000000000000007735c001/30/ae196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"timberline";
+src:url("af/b423b9/00000000000000007735cc72/30/le196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("woff2"),url("af/b423b9/00000000000000007735cc72/30/de196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("woff"),url("af/b423b9/00000000000000007735cc72/30/ae196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+.tk-ff-market-web { font-family: "ff-market-web",sans-serif; }
+.tk-caliban-std { font-family: "caliban-std",sans-serif; }
+.tk-swing-king { font-family: "swing-king",sans-serif; }
+.tk-timberline { font-family: "timberline",sans-serif; }

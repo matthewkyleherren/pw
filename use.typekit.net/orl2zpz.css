@@ -1,0 +1,22 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * ff-uberhand-pro:
+ *   - http://typekit.com/eulas/00000000000000007735aba1
+ *
+ * © 2009-2023 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2021-05-31 01:19:16 UTC"}*/
+
+@import url("../p.typekit.net/p8af0.css?s=1&amp;k=orl2zpz&amp;ht=tk&amp;f=35642&amp;a=12760205&amp;app=typekit&amp;e=css");
+
+@font-face {
+font-family:"ff-uberhand-pro";
+src:url("af/f08f39/00000000000000007735aba1/30/le196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("woff2"),url("af/f08f39/00000000000000007735aba1/30/de196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("woff"),url("af/f08f39/00000000000000007735aba1/30/ae196?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&amp;fvd=n4&amp;v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+.tk-ff-uberhand-pro { font-family: "ff-uberhand-pro",sans-serif; }

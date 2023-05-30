@@ -1,0 +1,1922 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB" class="no-js" dir="ltr" prefix="og: http://ogp.me/ns#">
+<!-- Mirrored from training.education.govt.nz/pages/mediacontent.jsf?mediaId=1251799&catalogId=849811&menuId=112475&client=external by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 May 2023 21:33:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+        <link rel="shortcut icon" href="https://training.education.govt.nz/data/client_design/MOE_external/ila/14.14.2.0/favicon.ico" type="image/x-icon" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link rel="stylesheet" href="../resources/design/css/fonts.html" />
+                <link rel="stylesheet" href="../data/client_design/MOE_external/ila/14.14.2.0/design/css/app.html" />
+            <link rel="stylesheet" href="../resources/design/css/foundation-datepicker.html" />
+        <script type="text/javascript" src="../microservices/polyfills/01_shim.min.html"></script>
+        <script type="text/javascript" src="../jamescore/jquery/dist/jquery.ad16c4a132ad2a03b4951185fed46d55397b5e88.min.html"></script>
+<script type="text/javascript" src="../jamescore/what-input/dist/what-input.36d0baa0aa85e42fb8a7a0c332ebc6e07244eb6b.min.html"></script>
+<script type="text/javascript" src="../jamescore/zone.js/dist/zone.f208a7bb5e41f477960197938af1234612222341.min.html"></script>
+<script type="text/javascript" src="../jamescore/foundation-sites/dist/js/foundation.fdf9ba184cf52eaf979213678c5a7f7c7a423ee9.min.html"></script>
+<script type="text/javascript" src="../jamescore/motion-ui/dist/motion-ui.846b12eda743fea9bdb8b7da041551d0e7df0a9c.min.html"></script>
+<script type="text/javascript" src="../jamescore/flipclock/compiled/flipclock.a9eda46e62b34c2d79416e87c6d55f27bb30a882.min.html"></script>
+<script type="text/javascript" src="../jamescore/jquery.cookie/jquery.cookie.31e1bcc4cf805a2c2fee21f48ded1e598f64a2a8.min.html"></script>
+<script type="text/javascript" src="../jamescore/foundation-datepicker/js/foundation-datepicker.d39512495bd4ce2e045f2db829e636e908a67602.min.html"></script>
+
+        <script type="text/javascript" src="../resources/javascript/foundation_override.html"></script>
+        <script type="text/javascript" src="../resources/javascript/learning_portal.html"></script>
+        <script type="text/javascript" src="../resources/javascript/jquery_regex.html"></script>
+        <script type="text/javascript" src="../resources/javascript/jresize/jquery.resize.html"></script>
+
+        <script>
+            var breadcrumbsArray = [];
+            var userLoggedIn = "false";
+            if (userLoggedIn === 'true') {
+                var isPGIntegration = "false";
+                if (isPGIntegration === 'true') {
+                    $(window).on('load', function () {
+                        $.ready.then(function() {
+                            var pgServerUrl = "";
+                            var pgUsername = "216acb52da1ccb78e0e35ff0b82e83c959cb6df12dc35cea83792c187784df55";
+                            var script = document.createElement('script');
+                            script.type = "text/javascript";
+                            script.src = pgServerUrl;
+                            script.setAttribute("data-user", pgUsername);
+                            document.head.appendChild(script);
+                        });
+                    });
+                }
+            } else {
+                for(var key in  sessionStorage){
+                    if (key.indexOf("course.password.checked.") === 0) {
+                        sessionStorage.removeItem(key);
+                    }
+                }
+            }
+
+            var currentMenuId = 112475;
+            var black_list = ['scroll', 'mouseenter', 'mouseleave', 'mousemove', 'mouseover', 'mouseout', 'mousewheel', 'pointermove', 'keypress', 'keyup'];
+            __zone_symbol__BLACK_LISTED_EVENTS = black_list;
+        </script>
+        <title>Education LMS
+        </title>
+        <meta name="description" content="" />
+            <script>
+                function bodyloadJS() {
+                }
+            </script>
+
+    <script>
+        /**
+         * Global definitions
+         */
+        var contextPath = '';
+        var rtl = false;
+        var solrUrl = "https://training.education.govt.nz/solr/catalogindex/query";
+        var postalCodeVerification = false;
+
+        var mediaPlayer = {
+            name: 'videojs',
+            license: ''
+        };
+
+        var publicLearningPortalUrl = 'https://training.education.govt.nz/';
+        var publicLearningPortalPath = 'https://training.education.govt.nz/';
+        // currently used only for European Commission
+        var showMediaEventStatus = false;
+        var showSkillAttainmentDate = false;
+        var showDueDate = false;
+        var dueDateInterval = 10;
+        var isRemoveOrderedCourseButtonDisabled = true;
+        var showDuedateAndIdentificationByManager = false;
+        var isEnrollmentDueDateMandatory = false;
+        var isEnrollmentIdentificationMandatory = false;
+        /**
+         * James implementation
+         */
+        var dataUrlPrefix = "..";
+        var uploadBaseUrl = "https://training.education.govt.nz/";
+        var dataUrlDownloadPostfix = "?provideAsDownload=true";
+
+        var openAttachment = function (relativeDataPath) {
+            window.location.href = dataUrlPrefix + relativeDataPath + dataUrlDownloadPostfix;
+        };
+
+        var embedJavascriptResources = function (dependencies, callback) {
+            return james.embedJavascriptResources('https://training.education.govt.nz/jamescore/', dependencies, callback);
+        };
+
+        /**
+         * Creates a cookie to notify the Java-execution that a user-data has changed.
+         */
+        var notifyAboutUserUpdate = function(expireConnection) {
+            var courseUpdateCookieName = "ILA_USER_PROFILE_UPDATE";
+            var expiryInMinutes = "120";
+            var contextPath = "";
+            //"2017-04-25T11:44:01.426Z"
+            var isoDateString = new Date().toISOString();
+            //to comply with cookie-value-restrictions we replace colon and period with underscore
+            //"2017-04-25T11_44_01.426Z"
+            var cookieValue = isoDateString.replace(/[:]/g, '_');
+            if (expireConnection !== undefined) {
+                cookieValue = cookieValue + "|" + expireConnection;
+            }
+            createCookie(courseUpdateCookieName, cookieValue, expiryInMinutes, contextPath);
+        };
+
+        /**
+         * Invalidates the course room cookie in order to clear the course room session cache.
+         */
+        var invalidateCourseRoomCache = function() {
+            var courseUpdateCookieName = "de.imc.ila.cache.COURSE_UPDATE";
+            var expiryInMinutes = "120";
+            var contextPath = "";
+            var cookieValue = readCookie(courseUpdateCookieName);
+            if (cookieValue === undefined) {
+                cookieValue = 0;
+            } else if (cookieValue !== "-1") {
+                cookieValue = parseInt(cookieValue, 10) + 1;
+            }
+            createCookie(courseUpdateCookieName, cookieValue, expiryInMinutes, contextPath);
+        };
+
+        /**
+         * Method to validate the user
+         * Should perform login steps and redirect the user back.
+         */
+        var validateUserAndRedirect = function() {
+            var locationObject = window.location;
+            var relativePathWithQueryParams = locationObject.pathname + locationObject.search;
+            var currentPathEncoded = encodeURIComponent(relativePathWithQueryParams);
+            var currentFragmentIdEncoded = encodeURIComponent(locationObject.hash);
+            var targetPath = '/pages/403-error.jsf';
+            return openPageByPath(targetPath, '?incoming=' + currentPathEncoded + '&incomingFragmentId=' + currentFragmentIdEncoded, '');
+        };
+
+        var reloadCourseRoom = function () {
+            invalidateCourseRoomCache();
+            location.reload();
+        };
+
+        /**
+         * Reloads the page with polling mode enabled.
+         * @param forced indicates if a reload should be forced, even if polling is already enabled.
+         */
+        //<![CDATA[
+        var reloadWithPollingModeEnabled = function (forced) {
+            //A force reload is required for igs-polling
+            var url = window.location.href;
+
+            if (url.indexOf('pollingMode') === -1){
+                var suffix = 'pollingMode=on#';
+                var op = '?';
+                if (url.indexOf('?') !== -1 && (url.indexOf('?') < url.indexOf('#'))) {
+                    op = '&amp;';
+                }
+                //insert pollingMode before angular-fragment-identifier (#)
+                url = url.replace('#', op + suffix);
+                openPageWithoutOpener(url, '_self');
+            } else if (forced) {
+                //forced reload
+                window.location.reload();
+            }
+        };
+        //]]>
+
+        /**
+         * Open a page with provided targetPath, query and hash.
+         * The target path must contain a leading slash.
+         * @tabOption: can be boolean or object or undefined
+         *   -- tabOption as boolean: true/false
+         *   -- tabOption as object : with one of the following possible configurations
+         *  {
+         *      type: 'same-page',
+         *      settings: {}
+         *  }
+         *  {
+         *      type: 'new-window'
+         *  }
+         *  {
+         *      type: 'popup',
+         *      settings: {}
+         *  }
+         */
+        var openPageByPath = function (targetPath, query, hash, tabOption, propsAsString) {
+            var targetUrl = "";
+            if (contextPath !== "") {
+                targetUrl = targetUrl + contextPath;
+            }
+            targetUrl = targetUrl + targetPath + query + hash;
+
+            var configurationType = typeof tabOption;
+            switch (configurationType) {
+                case 'boolean':
+                    if(tabOption) {
+                        openPageWithoutOpener(targetUrl);
+                    } else {
+                        openPageWithoutOpener(targetUrl, '_self');
+                    }
+                    break;
+                case 'object':
+                    switch (tabOption.type) {
+                        case 'new-window':
+                            openWindowWithCallback(targetUrl, tabOption, '');
+                            break;
+                        case 'popup':
+                            console.log('Should open URL in a popup with settings');
+                            if(propsAsString === undefined) {
+                                console.log('No windows width and height parameters defined for popup.');
+                                propsAsString = 'width=1000,height=800';
+                            }
+                            openWindowWithCallback(targetUrl, tabOption, propsAsString);
+                            break;
+                        case 'dry-run':
+                            return publicLearningPortalUrl.replace(/\/$/, "") + targetPath + query + hash;
+                            break;
+                        case 'same-page':
+                        default:
+                            openPageWithoutOpener(targetUrl, '_self');
+                            break;
+                    }
+                    break;
+                case 'undefined':
+                default:
+                    openPageWithoutOpener(targetUrl, '_self');
+                    break;
+            }
+            //we must stop form submitting
+            return false;
+        };
+
+        /**
+         * Adds the parent course id if present
+         */
+        function appendParentCourseIdsIfPresent(parentCourseId, parentCourseSetId, query) {
+            if (parentCourseId) {
+                query = concatUrl(query, "parentCourseId=" + parentCourseId);
+            }
+            if (parentCourseSetId) {
+                query = concatUrl(query, "parentCourseSetId=" + parentCourseSetId);
+            }
+            return query;
+        }
+
+        var openCourseComponent = function (courseId, mediaId, parentCourseId, openDirectly, runningLanguage, tabOption) {
+            var targetPath = '/pages/coursecontent.jsf';
+            var query = "?courseId=" + courseId + "&mediaId=" + mediaId + "&pollingMode=on";
+            var hasRunningLanguage = typeof(runningLanguage) !== 'undefined' && typeof(runningLanguage) === 'string';
+            query += hasRunningLanguage ? '&runningLanguage=' + runningLanguage : '';
+            query = appendParentCourseIdsIfPresent(parentCourseId, null, query);
+            if (openDirectly) {
+                query += "&openDirectly=" + openDirectly;
+            }
+            return openPageByPath(targetPath, query, '', tabOption);
+        };
+
+        var openCourseForum = function (courseId, discussionId, parentCourseId) {
+            var targetPath = '/pages/discussion.jsf';
+            var query = "?courseId=" + courseId + "&discussionId=" + discussionId;
+            query = appendParentCourseIdsIfPresent(parentCourseId, null, query);
+            return openPageByPath(targetPath, query, '');
+        };
+
+        var openCourseLibraryComponent = function (courseId, mediaId, parentCourseId, runningLanguage) {
+            var targetPath = '/pages/librarycontent.jsf';
+            var query = "?courseId=" + courseId + "&mediaId=" + mediaId;
+            var hasRunningLanguage = typeof(runningLanguage) !== 'undefined' && typeof(runningLanguage) === 'string';
+            query += hasRunningLanguage ? '&runningLanguage=' + runningLanguage : '';
+            query = appendParentCourseIdsIfPresent(parentCourseId, null, query);
+            return openPageByPath(targetPath, query, '');
+        };
+
+        var openCatalogueMedia = function (catalogId, mediaId) {
+            var extraParams = {'catalogId': catalogId};
+            openCatalogueMediaForParams(mediaId, extraParams);
+        };
+
+        var openCatalogueMediaForParams = function (mediaId, extraParameters) {
+            var targetPath = '/pages/mediacontent.jsf';
+            var query = "?mediaId=" + mediaId;
+            if (extraParameters) {
+                // actually extra parameters must already containt the catalog id for a catalog element
+                angular.forEach(extraParameters, function(value, key) {
+                    query = concatUrl(query, key + "=" + value);
+                });
+            }
+            return openPageByPath(targetPath, query, '');
+        };
+
+        /**
+         * Easy concatenation of url. Adds the query parameter limiter automatically.
+         * @param url - the already existing url
+         * @param newParam - the param to be added
+         */
+        function concatUrl(url, newParam) {
+            var lastCharacter = url[url.length - 1];
+            if (lastCharacter && lastCharacter !== "&" && lastCharacter !== "?") {
+                url = url + "&";
+            } else if (!lastCharacter) {
+                url = url + "?";
+            }
+            return url + newParam;
+        }
+
+        var openCatalogue = function (catalogId, catalogueQuery, employeeId, tabOption, customMenuId) {
+            var targetPath = '/pages/catalogsearch.jsf';
+            var query = "?";
+            if (catalogId !== undefined && catalogId > 0) {
+                query = concatUrl(query, "catalogId=" + catalogId);
+            }
+            if (employeeId !== undefined && employeeId > 0 && employeeId !== "@self") {
+                query = concatUrl(query, "employeeId=" + employeeId);
+            }
+            if (catalogueQuery !== undefined) {
+                query = concatUrl(query, catalogueQuery);
+            }
+            if (customMenuId !== undefined) {
+                query = concatUrl(query, "menuId=" + customMenuId);
+            }
+            return openPageByPath(targetPath, query, '', tabOption);
+        };
+
+        var openCatalogueWithConfig = function (catalogId, config) {
+            var targetPath = '/pages/catalogsearch.jsf';
+            var query = '?';
+            if (catalogId !== undefined && catalogId > 0) {
+                query = query + "catalogId=" + catalogId;
+            }
+            if (config !== undefined) {
+                if(config.skillId !== undefined) {
+                    if(query.length > 1) {
+                        query += '&';
+                    }
+                    query += 'fq={!tag=skillIds} skillIds:(*/'+config.skillId+'/)';
+                }
+                if(config.sidebarExpanded !== undefined) {
+                    if(query.length > 1) {
+                        query += '&';
+                    }
+                    query += 'sidebarExpanded=' + config.sidebarExpanded;
+                }
+            }
+            return openPageByPath(targetPath, query, '');
+        };
+
+        function createQueryForCourseroom(courseId, parentCourseId, parentCourseSetId, programmeId, runningLanguage) {
+            var query = "?courseId=" + courseId + "&pollingMode=on";
+            if (parentCourseId) {
+                query += "&parentCourseId=" + parentCourseId;
+            }
+            if (runningLanguage && DISPLAY_LANGUAGES) {
+                query += "&runningLanguage=" + runningLanguage;
+            }
+            if (parentCourseSetId) {
+                query += "&parentCourseSetId=" + parentCourseSetId;
+            }
+            if(programmeId && programmeId > 0) {
+                query += "&programmeId=" + programmeId;
+            }
+            return query;
+        }
+
+        var openCourseRoom = function (courseId, parentCourseId, runningLanguage, tabOption) {
+            var targetPath = '/pages/course.jsf';
+            var query = createQueryForCourseroom(courseId, parentCourseId, null, 0, runningLanguage);
+            return openPageByPath(targetPath, query, '', tabOption);
+        };
+        // This is implemented since its too risky to change openCourseRoom before release TODO
+        var openCourseRoomForSubCourse = function (courseId, parentCourseId, parentCourseSetId, programmeId, runningLanguage, tabOption) {
+            var targetPath = '/pages/course.jsf';
+            var query = createQueryForCourseroom(courseId, parentCourseId, parentCourseSetId, programmeId, runningLanguage);
+            return openPageByPath(targetPath, query, '', tabOption);
+        };
+
+        var openAccountActivation = function () {
+          var targetPath = '/pages/accountactivation.jsf';
+          return openPageByPath(targetPath, '', '');
+        };
+
+        var openLoginSuccess = function () {
+          var targetPath = '/pages/login-success.jsf';
+          return openPageByPath(targetPath, '', '');
+        };
+
+        var openLogin = function () {
+            var targetPath = '/pages/login.jsf';
+            var query = '?finishSignUp=true';
+            return openPageByPath(targetPath, query, '');
+        };
+
+        var openEditUserSyllabusPage = function (courseId, userId, newTab) {
+            return openUserSyllabusPage(courseId, userId, newTab, false);
+        };
+        var openViewUserSyllabusPage = function (courseId, userId, newTab) {
+            return openUserSyllabusPage(courseId, userId, newTab, true);
+        };
+        var openUserSyllabusPage = function (courseId, userId, newTab, view) {
+            var targetPath = '/pages/usersyllabus.jsf';
+            var query = "?courseId=" + courseId + "&userId=" + userId + (view ? "&view=true" : "");
+            return openPageByPath(targetPath, query, '', newTab);
+        };
+
+        var openAttendanceTrackingPage = function (courseId, participantId, tabOption) {
+            var targetPath = '/pages/attendance-tracking.jsf';
+            var query = "?courseId=" + courseId;
+            if(participantId && participantId > 0) {
+                query += "&participantId=" + participantId;
+            }
+            return openPageByPath(targetPath, query, '', tabOption);
+        };
+
+        function appendXSRFToken() {
+            return "&XSRFToken=" + '';
+        }
+
+        var openMyCourses = function (category, personId, customMenuId) {
+            var targetPath = '/pages/personalarea.jsf';
+            var migratedPersonId = personId !== undefined ? personId : '@self'; //fallback if not specified
+            var hash = "#!/users/" + migratedPersonId + "/contents" + (category? "/" + category + "?type=COURSE" : "");
+            var query = customMenuId ? "?menuId=" + customMenuId : '';
+            return openPageByPath(targetPath, query, hash);
+        };
+
+        var openMentoredOjt = function (customMenuId) {
+            var targetPath = "/pages/mentored-ojt.jsf";
+            var query = customMenuId ? "?menuId=" + customMenuId : '';
+            return openPageByPath(targetPath, query, "");
+        };
+
+        var openOjtPrintPage = function (trainingId) {
+            var targetPath = "/pages/print-ojt.jsf";
+            var query = "?ojtId=" + trainingId;
+            return openPageByPath(targetPath, query, "", true);
+        }
+
+        var openCertificationPrintPage = function (userId, profileId, certificationId, frameId) {
+            var targetPath = "/pages/print-certification.jsf";
+            var query = "?userId=" + userId + "&profileId=" + profileId + "&certificationId=" + certificationId;
+            if(frameId !== undefined){
+                query += "&frameId=" + frameId;
+            }
+            const tabOption = {type: "new-window"}
+            return openPageByPath(targetPath, query, "", tabOption);
+        }
+
+        var openOjtDetails = function (trainingId, customMenuId) {
+            var targetPath = "/pages/ojt-training-overview.jsf";
+            var query = customMenuId ? "?menuId=" + customMenuId : '';
+            var hash = "#!/trainings/" + trainingId + "/tasks";
+            return openPageByPath(targetPath, query, hash);
+        }
+
+        var openMyProgrammes = function (category, personId, customMenuId) {
+            var targetPath = '/pages/personalarea.jsf';
+            var migratedPersonId = personId !== undefined ? personId : '@self'; //fallback if not specified
+            var hash = "#!/users/" + migratedPersonId + "/contents" + (category? "/" + category + "?type=PROGRAM" : "");
+            var query = customMenuId ? "?menuId=" + customMenuId : '';
+            return openPageByPath(targetPath, query, hash);
+        };
+
+        var openMyLearnings = function (category, personId, queryParams) {
+            var targetPath = "/pages/personalarea.jsf";
+            var computedPersonId = personId !== undefined ? personId : '@self';
+            var hash = "#!/users/" + computedPersonId + "/contents";
+            if (category) {
+                hash += "/" + category;
+            }
+            // Append the queryParams for optional parameters only if they exist
+            if (queryParams && Object.keys(queryParams).length) {
+                hash += '?';
+                angular.forEach(queryParams, function(value, key) {
+                    if (value) {
+                        // If the value contains comma it means it has multiple options to be set
+                        if (value.indexOf(",") !== -1) {
+                            var valuesToSet = value.split(",");
+                            // If there are valid parts/values add them with same key
+                            if (valuesToSet.length > 0) {
+                                angular.forEach(valuesToSet, function(part) {
+                                    hash = concatUrl(hash, key + "=" + part.trim());
+                                });
+                            }
+                        } else {
+                            hash = concatUrl(hash, key + "=" + value);
+                        }
+                    }
+                });
+            }
+            return openPageByPath(targetPath, '', hash);
+        };
+
+        var openManageTrainings = function () {
+            var targetPath = "/pages/contentdesign.jsf";
+            var hash = "#!/manage";
+            return openPageByPath(targetPath, '', hash);
+        };
+
+        var openMyCompetencies = function (category, personId, customMenuId) {
+            var targetPath = "/pages/competencies.jsf";
+            var migratedPersonId = personId !== undefined ? personId : '@self'; //fallback if not specified
+            var hash = "#!/users/" + migratedPersonId + "/competencies/" + category;
+            var query = customMenuId ? "?menuId=" + customMenuId : '';
+            return openPageByPath(targetPath, query, hash);
+        };
+
+        var openMyStaff = function () {
+            var targetPath = "/pages/mystaff.jsf";
+            return openPageByPath(targetPath, '', '');
+        };
+
+        //used from mystaff page
+        var openBatchEnrollment = function (userIds, customMenuId, myStaffContext) {
+            var targetPath = "/pages/batchenrollment.jsf";
+            var query = customMenuId ? "?menuId=" + customMenuId : '';
+            var myStaffQuery = myStaffContext ? '&myStaffContext=true' : '';
+            var angularParams = '#select-course?employeeIds=' + userIds.join(",") + myStaffQuery;
+            return openPageByPath(targetPath, query, angularParams);
+        };
+
+        //used from new multi enrollment page built with React
+        var openEnrollmentProcessor = function (courseIds, userIds, identificationId, dueDate, customMenuId) {
+            var targetPath = "/pages/batchenrollment.jsf";
+            var query = customMenuId ? "?menuId=" + customMenuId : '';
+            var angularParams = '#/enrolment-processor?userIds=' + userIds.join(",") + '&courseIds=' + courseIds.join(",");
+            if (identificationId) {
+                angularParams += '&identificationId=' + identificationId;
+            }
+            if (dueDate) {
+                angularParams += '&dueDate=' + dueDate;
+            }
+            return openPageByPath(targetPath, query, angularParams);
+        };
+
+        //used from mystaff page when we need to open the new multi enrollment page built with React
+        var openMultiEnrollment = function (userIds, customMenuId) {
+            var targetPath = "/pages/multienrollment.jsf";
+            var query = '?employeeIds=' + userIds.join(",") + (customMenuId ? '&menuId=' + customMenuId : '');
+            return openPageByPath(targetPath, query, '');
+        };
+
+        //used from mystaff page when we need to open the new multi enrollment page built with React
+        var openMultiEnrollment = function (userIds, customMenuId) {
+            var targetPath = "/pages/multienrollment.jsf";
+            var query = '?employeeIds=' + userIds.join(",") + (customMenuId ? '&menuId=' + customMenuId : '');
+            return openPageByPath(targetPath, query, '');
+        };
+
+        //used from new multi enrollment page built with React
+        var openEnrollmentProcessor = function (courseIds, userIds, identificationId, dueDate, customMenuId) {
+            var targetPath = "/pages/batchenrollment.jsf";
+            var query = customMenuId ? "?menuId=" + customMenuId : '';
+            var angularParams = '#/enrolment-processor?userIds=' + userIds.join(",") + '&courseIds=' + courseIds.join(",");
+            if (identificationId) {
+                angularParams += '&identificationId=' + identificationId;
+            }
+            if (dueDate) {
+                angularParams += '&dueDate=' + dueDate;
+            }
+            return openPageByPath(targetPath, query, angularParams);
+        };
+
+        //used from mystaff page when we need to open the new multi enrollment page built with React
+        var openMultiEnrollment = function (userIds, customMenuId) {
+            var targetPath = "/pages/multienrollment.jsf";
+            var query = '?employeeIds=' + userIds.join(",") + (customMenuId ? '&menuId=' + customMenuId : '');
+            return openPageByPath(targetPath, query, '');
+        };
+
+        //used from new multi enrollment page built with React
+        var openEnrollmentProcessor = function (courseIds, userIds, identificationId, dueDate, customMenuId) {
+            var targetPath = "/pages/batchenrollment.jsf";
+            var query = customMenuId ? "?menuId=" + customMenuId : '';
+            var angularParams = '#/enrolment-processor?userIds=' + userIds.join(",") + '&courseIds=' + courseIds.join(",");
+            if (identificationId) {
+                angularParams += '&identificationId=' + identificationId;
+            }
+            if (dueDate) {
+                angularParams += '&dueDate=' + dueDate;
+            }
+            return openPageByPath(targetPath, query, angularParams);
+        };
+
+        //used from mystaff page when we need to open the new multi enrollment page built with React
+        var openMultiEnrollment = function (userIds, customMenuId) {
+            var targetPath = "/pages/multienrollment.jsf";
+            var query = '?employeeIds=' + userIds.join(",") + (customMenuId ? '&menuId=' + customMenuId : '');
+            return openPageByPath(targetPath, query, '');
+        };
+
+        //used from mystaff page
+        var openLearningPlanAssignment = function (employeeIds, customMenuId) {
+            var targetPath = "/pages/learningplan.jsf";
+            var query = customMenuId ? "?menuId=" + customMenuId : '';
+            query += employeeIds ? '&employeeIds=' + employeeIds.join(',') : '';
+            return openPageByPath(targetPath, query, '');
+        };
+
+        var openMyStaffNavigation = function() {
+            var targetPath = "pages/mystaff.jsf";
+            if (targetPath.indexOf("http") == 0) {
+                window.location.href = targetPath;
+                return false;
+            }
+            return openPageByPath("/" + targetPath, '', '');
+        };
+
+        var openManageEnrollmentPage = function (courseId, personId, route) {
+            var targetPath = "/pages/manageenrollment.jsf";
+            var hash = "#/" + route + "?employeeId=" + personId + "&courseId=" + courseId;
+            return openPageByPath(targetPath, '', hash);
+        };
+
+        function getParamOrDefaultValue(paramValue, defaultValue) {
+            return paramValue ? paramValue : defaultValue;
+        }
+
+        var openEnrollmentFormPage = function (componentId, participantId, supervisorId, registrationProcessType, componentType, catalogId, templateId, parentCourseId, parentCourseSetId, programmeId, actionType, originalActionTypeId) {
+            var targetPath = "/pages/enrolmentform.jsf";
+            // WARNING!!! Order of the params is critical as they represent path params in the angular js routing and should not be changed
+            var pathParams = ["#!/enrol", componentId, participantId];
+            pathParams.push(getParamOrDefaultValue(supervisorId, 0));
+            pathParams.push(registrationProcessType);
+            pathParams.push(componentType);
+            pathParams.push(getParamOrDefaultValue(catalogId, -1));
+            pathParams.push(getParamOrDefaultValue(templateId, -1));
+            pathParams.push(getParamOrDefaultValue(parentCourseId, -1));
+            pathParams.push(getParamOrDefaultValue(parentCourseSetId, -1));
+            pathParams.push(participantId);
+            pathParams.push(getParamOrDefaultValue(programmeId, -1));
+            if (actionType) {
+                pathParams.push(actionType);
+                pathParams.push(originalActionTypeId);
+            }
+            var hash = pathParams.join("https://training.education.govt.nz/");
+            return openPageByPath(targetPath, '', hash);
+        };
+
+        /**
+         * opens the checkout page to handle the enrolment request
+         * method arguments (in order): courseId, catalogId, programmeId, templateId, participantId, parentCourseId, parentCourseSetId, employeeId, voucherCode
+         */
+        var openCheckout = function (courseId, catalogId, programmeId, templateId, participantId, parentCourseId,
+                                     parentCourseSetId, employeeId, voucherCode, dueDateStr, identificationId,
+                                     approval, bookingState, menuId) {
+            var targetPath = '/pages/checkout.jsf';
+            var query = concatUrl("?courseId=" + courseId, "participantId=" + participantId);
+            if (catalogId) {
+                query = concatUrl(query, "catalogId=" + catalogId);
+            }
+            if (programmeId) {
+                query = concatUrl(query, "programmeId=" + programmeId);
+            }
+            if (templateId) {
+                query = concatUrl(query, "templateId=" + templateId);
+            }
+            if (employeeId) {
+                query = concatUrl(query, "employeeId=" + employeeId);
+            }
+            if (voucherCode) {
+                query = concatUrl(query, "voucherCode=" + voucherCode);
+            }
+            if (dueDateStr) {
+                query = concatUrl(query, "dueDate=" + dueDateStr);
+            }
+            if (identificationId) {
+                query = concatUrl(query, "identificationId=" + identificationId);
+            }
+            if (approval) {
+                query = concatUrl(query, "approval=" + approval);
+            }
+            if (bookingState) {
+                query = concatUrl(query, "bookingState=" + bookingState);
+            }
+            if (menuId) {
+                query = concatUrl(query, "menuId=" + menuId);
+            }
+            query += appendXSRFToken();
+            query = appendParentCourseIdsIfPresent(parentCourseId, parentCourseSetId, query);
+            return openPageByPath(targetPath, query, '');
+        };
+
+        var open403ErrorPage = function () {
+            var targetPath = '/pages/403-error.jsf?incoming=%2Fpages%2Fmediacontent.jsf%3FmediaId%3D1251799%26catalogId%3D849811%26menuId%3D112475%26client%3Dexternal';
+            return openPageByPath(targetPath, '', '');
+        };
+
+        var open404ErrorPage = function () {
+            var targetPath = '/pages/404-error.jsf';
+            return openPageByPath(targetPath, '', '');
+        };
+
+        var openSystemErrorPage = function () {
+            var targetPath = '/pages/system-error.jsf';
+            return openPageByPath(targetPath, '', '');
+        };
+
+		var openUserProfile = function (participantId, tabOption, customMenuId, profileSection) {
+            var targetPath=  '/pages/userprofile.jsf';
+            var section = profileSection ? profileSection : 'view';
+            var hash = "#!/" + section + "/" + participantId;
+            var query = customMenuId ? "?menuId=" + customMenuId : '';
+            return openPageByPath(targetPath, query, hash, tabOption);
+        };
+
+        /**
+         * Method that is called when enrollmentform should be shown
+         */
+        var openEnrollmentForm = function (courseId, supervisorId, userId, registrationTypeName, objectType, catalogId, templateId, parentCourseId, parentCourseSetId, programmeId, tabOption) {
+            var targetPath = '/pages/enrolmentform.jsf';
+            var hashPath = "#!/enrol/" + courseId;
+            hashPath += "/" + supervisorId;
+            hashPath += "/" + userId; // 0 means supervisor id = 0
+            hashPath += "/" + registrationTypeName;
+            hashPath += "/" + objectType;
+            hashPath += "/" + catalogId;
+            hashPath += "/" + templateId;
+            hashPath += "/" + parentCourseId;
+            hashPath += "/" + parentCourseSetId;
+            hashPath += "/" + programmeId;
+            return openPageByPath(targetPath, '', hashPath, tabOption);
+        };
+
+        /**
+         *  Open the profile of a course participant via the userprofile-functionality.
+         */
+        var openCourseParticipantProfile = function (courseId, participantId) {
+            var targetPath=  '/pages/userprofile.jsf';
+            var hash = "#!/view/course/" + courseId + "/participants/" + participantId;
+            return openPageByPath(targetPath, '', hash);
+        };
+
+		 var openBookShelfMedia = function (mediaId) {
+             var targetPath = '/pages/bookshelfmedia.jsf';
+             var query = "?mediaId=" + mediaId;
+             return openPageByPath(targetPath, query, '');
+        };
+
+        var openMyExperiences = function (category) {
+            var targetPath = '/pages/myexperiences.jsf';
+            var hash = "#!/";
+            switch (category) {
+                case "experiences":
+                    hash += "experiences";
+                    break;
+                case "badges":
+                    hash += "badges";
+                    break;
+            }
+            return openPageByPath(targetPath, '', hash);
+        };
+
+        var logout = function () {
+            var targetPath = '/pages/logout.jsf';
+            return openPageByPath(targetPath, '', '');
+        };
+
+        var openCompetenciesPage = function (employeeId, tabSelector, tabOption, customMenuId) {
+        	var employeeSelector = (employeeId ? employeeId : '@self');
+        	var targetPath = '/pages/competencies.jsf';
+            var hash = '#!/users/' + employeeSelector + '/competencies/' + tabSelector;
+            var query = customMenuId ? "?menuId=" + customMenuId : '';
+        	return openPageByPath(targetPath, query, hash, tabOption);
+        };
+
+        function addQueryParameter(address, queryParamKey, newQueryParamValue) {
+            var regExp = new RegExp("(" + queryParamKey + "=)([^&?#]*)");
+            if (regExp.test(address)) {
+                //locale is already present in current location query -> needs to be replaced
+                address = address.replace(regExp, "$1" + newQueryParamValue);
+            } else if (address === "") {
+                //no query defined in location -> new query with queryparam (locale)
+                address = '?' + queryParamKey + "=" + newQueryParamValue;
+            } else {
+                //query defined in location -> add queryparam (locale)
+                address += '&' + queryParamKey + "=" + newQueryParamValue;
+            }
+            return address;
+        }
+
+        function addQueryParameterToCurrentUrl(queryParamKey, newQueryParamValue) {
+            var queryString = addQueryParameter(location.search, queryParamKey, newQueryParamValue);
+            var origin = location.origin;
+            if (!origin) {
+                //location.origin is not supported in IE10 -> if not defined create from other location properties
+                origin = location.protocol + "//" + location.hostname + (location.port ? ':' + location.port : '');
+            }
+            return origin + location.pathname + queryString + location.hash;
+        }
+
+        /**
+         * Update page target on language navi entry with hash-tag params.
+		 * @param currentElement navigation entry to be updated
+         */
+		function updateLanguageEntry(currentElement) {
+            var language = getQueryParamValueFromUrl(currentElement.href, "locale");
+            currentElement.href = addQueryParameterToCurrentUrl("locale", language);
+        }
+
+        /**
+         * Update language-section in footer and language drop down by adding/replacing the locale query parameter.
+		 * '#NL_LANGAUGE_MENU_DROPDOWN .navi-language-entry'
+         */
+        var updateLangSelection = function () {
+                $('#lang-selection .language-change-footer-entry').each(function(index, object){
+                    //footer item
+                    updateLanguageEntry(object);
+                });
+                $('.navi-language-entry').each(function (index, object) {
+                    //header item
+                    updateLanguageEntry(object);
+                });
+        };
+        if (typeof jQuery !== 'undefined') {
+            $(document).ready(function () {
+                window.onhashchange = function () {
+                    updateLangSelection();
+                };
+                updateLangSelection();
+            });
+        }
+
+
+        /**
+         * Closes all the foundation reveal dialogs, when the page is changed
+         */
+        if (typeof jQuery !== 'undefined') {
+            $(window).bind('hashchange', function () {
+                var allReveals = $('[data-reveal].reveal.open:not(.stay-open-on-hash-change)'); //get all the modals that are open
+                var numberRevealsFound = allReveals.length;
+                for (var i = 0; i < numberRevealsFound; i++) {
+                    var idReveal = allReveals[i].id;
+                    $('#' + idReveal).hide(); //if we do not hide it directly we'll have some strange side effects
+                    $('#' + idReveal).foundation('close');
+                }
+            });
+        }
+
+        /**
+         * Indicates the environment specific global date pattern in the user language.
+         */
+        var globalDatePattern = "MMM d, yyyy";
+
+        /**
+         * Indicates the environment specific global time pattern in the user language.
+         */
+        var globalTimePattern = "HH:mm";
+        /**
+         * Indicates the environment specific global date time pattern in the user language.
+         */
+        var globalDateTimePattern = "d MMM yyyy HH:mm";
+        /**
+         * Indicates the environment specific global short date time pattern in the user language.
+         */
+        var shortDatePattern = "MMM d, yyyy";
+
+        //MomentJs compatible patterns
+        var momentDatePatterns = {
+            //unfortunately we have to change the pattern in order to support momentjs
+            short: shortDatePattern.toUpperCase()
+        };
+
+        /**
+         * Sets the decimal number format symbols for $locale
+         * @param locale $locale service
+         */
+        var setDecimalFormatProperties = function(locale) {
+            locale.NUMBER_FORMATS.DECIMAL_SEP = ".";
+            locale.NUMBER_FORMATS.GROUP_SEP = ",";
+        };
+
+        /**
+         * This variable defines whether the bundle keys or the corresponding bundle values are shown.
+         */
+        var showBundleKey = false;
+        /**
+         * This variable defines the current app language
+         */
+        var appLanguage = "en-GB";
+
+        var appPersonNameOrder = 0;
+
+        /**
+         * Indication if password autocomplete option is enabled or not.
+         * @type {string} 'on' if enabled, 'off' otherwise.
+         */
+        var passwordAutocomplete = "off";
+
+        /**
+         * Restapi Location
+         * @type {string} e.g. "learningportal/restapi/"
+         */
+        var restapiLocation = "/restapi";
+        /**
+         * Anonymous RestAPI Location
+         * @returns the path to the rest api
+         */
+        var anonymousRestapiLocation = "/commonrestapi";
+
+        /**
+         * registration Restapi Location
+         * @type {string} e.g. "learningportal/registrationapi/"
+         */
+        var registrationRestapiLocation = "/registrationapi";
+
+        /**
+         * Gamification api Location
+         * @type {string} e.g. "learningportal/rest/"
+         */
+        var gamificationapiLocation = "/rest";
+
+        /**
+         * OnClick- / ButtonFunction for downloading the course certificate.
+         */
+        var downloadCourseCertificate = function (courseId, userId) {
+            var address;
+            if (userId && userId !== '@self') {
+                address = restapiLocation + '/lms/users/' + userId + '/courses/' + courseId + '/certificate';
+            } else {
+                address = restapiLocation + '/lms/courses/' + courseId + '/certificate';
+            }
+            downloadFile(address);
+        };
+
+        /**
+         * Function for downloading the programme certificate.
+         */
+        var downloadProgrammeCertificate = function (programmeId, userId) {
+            var address;
+            if (userId && userId !== '@self') {
+                address = restapiLocation + '/lms/users/' + userId + '/courses/' + programmeId + '/certificate';
+            } else {
+                address = restapiLocation + '/lms/courses/' + programmeId + '/certificate';
+            }
+            downloadFile(address);
+        };
+
+        /**
+         * Function for downloading the programme level certificate.
+         */
+        var downloadProgrammeLevelCertificate = function (programmeId, levelId, userId) {
+            var address;
+            if (userId && userId !== '@self') {
+                address = restapiLocation + '/lms/users/' + userId + '/programmes/' + programmeId + '/folder/' + levelId + '/certificate';
+            } else {
+                address = restapiLocation + '/lms/programmes/' + programmeId + '/folder/' + levelId + '/certificate';
+            }
+            downloadFile(address);
+        };
+
+        /**
+         * Content server
+         * @type {string} e.g. "../data"
+         */
+        var contentServer = "/ils";
+
+        /**
+         * Client Design path
+         */
+        var clientDesignPath = "/data/client_design/MOE_external/ila/14.14.2.0/design";
+
+        /**
+         * Client Templates path
+         */
+        var clientTemplatesPath = "/data/client_design/MOE_external/ila/14.14.2.0/templates";
+
+        /**
+         * Internal content server
+         * @type {string} e.g. "../data"
+         */
+        var internalContentServer = "http://localhost:8080/ils";
+
+        /**
+         * Internal content server context path
+         * @type {string} e.g. "../data"
+         */
+        var internalContentServerContextPath = "/ils";
+
+        /**
+         * Internal content server
+         * @type {string} e.g. "../data"
+         */
+        var internalContentServerUrlWithPort = "http://localhost:8080/ils";
+
+        /**
+         * Current user ID
+         * @type {integer} e.g. 103127
+         */
+        var currentUserId = 0;
+
+        /**
+         * Timezone offset as a string
+         * @type {string} e.g. "+0100"
+         */
+        var currentUserPreferredTimeZoneOffset = "";
+
+        /**
+         * Timezone identifier as a string
+         * @type {string} e.g. "CET" or "Australia/Melbourne"
+         */
+        var currentUserPreferredTimeZoneIdentifier = "";
+
+        /**
+        * Indicates if remove pending enrolment is active or not
+        */
+        var removePendingEnrolment = true;
+
+		/**
+		*Indicates if the logged user can prebook staff members
+		*/
+		var isAllowedStaffPrebooking = true;
+
+        /**
+        * Variable that holds the system config value, for enrolment by supervisor
+        */
+        var enrolmentBySupervisor = true;
+        /**
+         * Timezone identifier as a string
+         * @type {string} e.g. "CET" or "Australia/Melbourne"
+         */
+        var getMomentTimeZoneIdentifier = function() {
+            if (currentUserPreferredTimeZoneIdentifier === "" && moment !== undefined && moment.tz !== undefined) {
+                //this is required for an anonymous user: According to DD, we should use moment in order to resolve the TZ.
+                //in order to avoid multiple calls to moment (performance), let's store the value so that the next time, the first if condition will stop
+                currentUserPreferredTimeZoneIdentifier = moment.tz.guess();
+            }
+            return currentUserPreferredTimeZoneIdentifier;
+        };
+
+        /**
+         * Definition of the navigation settings
+         */
+        var navigation = {
+            header: {
+                sticky: true,
+                floated: false
+            }
+        };
+
+        var debug = false;
+        var courseTileSettings = {
+            labels: [{
+                type: 'DUE_DATE'
+            }]
+        };
+        var sortedMetadata = [];
+        if ("status,maintype,location,duration,course-content-learning-form,programme-content,skills,registration-identifier" !== "") {
+            sortedMetadata = "status,maintype,location,duration,course-content-learning-form,programme-content,skills,registration-identifier".split(",").map(function(item) {
+                return item.trim();
+            });
+        }
+
+        var metadataPositionDisplay = "";
+        if ("BELOW_PROGRESS" !== "") {
+            metadataPositionDisplay = "BELOW_PROGRESS";
+        }
+        /**
+        * LANGUAGES GLOBAL VARIABLE
+        * */
+        var DISPLAY_LANGUAGE_FLAG = false;
+        var DISPLAY_LANGUAGE_STYLE_ON_TILES = "LANGUAGE NAME";
+        var DISPLAY_LANGUAGE_ON_TILES = "USE FOR DESCRIPTION AND CONTENT".split(',');
+        var DISPLAY_LANGUAGES = false;
+
+        var userData = {
+  "loggedIn" : false,
+  "userId" : -1,
+  "preferredLang" : "",
+  "firstName" : "",
+  "lastName" : "",
+  "loginName" : "",
+  "title" : "",
+  "isSupervisor" : false,
+  "isRegistrationDelegate" : false,
+  "loginSource" : ""
+};
+        /**
+         * Indication whether force login is enabled or not.
+         */
+        var forceLoginEnabled = true;
+
+        var useComponentACLInCatalog = false;
+
+        var learningFormSettings = {
+            enabled: false,
+            formId: 0,
+            bundleName: ""
+        };
+
+        var activeClientConfig = {
+            clientId: 2,
+            clientPattern: "external",
+            clientPatternType: "PARAMETER",
+            defaultCourseImage: "/data/client_design/MOE_external/global/images/course_description_image_default.png",
+            defaultCourseTemplateImage: "/data/client_design/MOE_external/global/images/course_template_description_image_default.png",
+            defaultProgrammeImage: "/data/client_design/MOE_external/global/images/programme_description_image_default.png",
+            eSignatureEnabled: false
+        };
+
+        if (true) {
+            (function (window, clientConfig) {
+                if (clientConfig.clientPatternType === "PARAMETER") {
+                    var url = addQueryParameterToCurrentUrl("client", clientConfig.clientPattern);
+                    window.history.replaceState(null, null, url);
+                }
+            })(window, activeClientConfig);
+        }
+
+        var activeAuthConfiguration = {
+            facebook: {
+                enabled: false,
+                appId: "",
+                version: "v2.11",
+                data: {
+                    scope: "public_profile,email",
+                    auth_type: ""
+                }
+            },
+            saml: {
+                enabled: false
+            },
+            windows: {
+                enabled: false
+            },
+            basic: {
+                enabled: true
+            },
+            custom: {
+                enabled: false
+            },
+            selfRegistration: {
+                enabled: false
+            },
+            passwordRequest: {
+                enabled: true
+            },
+            stayLoggedIn: {
+                enabled: false
+            },
+            openIdConnect: {
+                enabled: true
+            },
+            autocomplete : "off"
+        };
+
+        var customTemplateMap = {};
+        var templatePostfix = "?r=110473";
+        var getCustomTemplatePath = function(originalTemplatePath) {
+            var result = originalTemplatePath;
+            var customEntry = customTemplateMap[originalTemplatePath];
+            if (customEntry) {
+                result = customEntry;
+            }
+            return result + templatePostfix;
+        };
+
+        var openClassification = function (dashboardId, rootClassificationId, classificationId) {
+            var targetPath = '/pages/classificationsearch.jsf';
+            var query = "?";
+            if (dashboardId !== undefined && dashboardId > 0) {
+                query = concatUrl(query, "dashboardId=" + dashboardId);
+            }
+            if (rootClassificationId !== undefined && rootClassificationId > 0) {
+                query = concatUrl(query, "rootClassificationId=" + rootClassificationId);
+            }
+            if (classificationId !== undefined && classificationId > 0) {
+                query = concatUrl(query, "classificationId=" + classificationId);
+            }
+            return openPageByPath(targetPath, query, '');
+        };
+
+        var openDashboard = function (dashboardId) {
+            var targetPath = '/pages/internal-dashboard.jsf';
+            var query;
+            if (dashboardId !== undefined && dashboardId > 0) {
+                query = "#/?dashboardId=" + dashboardId;
+            } else {
+                query = "";
+            }
+            return openPageByPath(targetPath, query, '');
+        };
+
+        /**
+         * Method that is called when an staff enrolment should be done
+         * Param 1: the object type
+         * Param 2: the object id
+         * Param 3: the context id, e.g. catalogue id (optional)
+         */
+        var openStaffEnrolment = function (objectType, objectId, contextId) {
+            var targetPath = '/pages/staffenrolment.jsf';
+            var hashPath = "#!/" + objectType + "/" + objectId;
+            if (contextId !== undefined && contextId > 0) {
+                hashPath += "/" + contextId;
+            }
+            return openPageByPath(targetPath, '', hashPath);
+        };
+        /**
+         * Method that is called when multi staff enrollment should be started
+         * Param 1: componentType (course|programme)
+         * Param 2: componentId
+         * Other params used for access assurance(optional): catalogId, templateId, programmeId, parentCourseId, parentCourseSetId
+         */
+        var openMultiStaffEnrolment = function (componentType, componentId, catalogId, templateId, programmeId, parentCourseId, parentCourseSetId) {
+            var targetPath = '/pages/batchenrollment.jsf';
+            var query = concatUrl("", "componentIds=" + componentId);
+            query = concatUrl(query, "componentType=" + componentType);
+            if (catalogId !== undefined && catalogId > 0) {
+                query = concatUrl(query, "catalogId=" + catalogId);
+            }
+            if (templateId !== undefined && templateId > 0) {
+                query = concatUrl(query, "templateId=" + templateId);
+            }
+            if (programmeId !== undefined && programmeId > 0) {
+                query = concatUrl(query, "programmeId=" + programmeId);
+            }
+            if (parentCourseId !== undefined && parentCourseId > 0) {
+                query = concatUrl(query, "parentCourseId=" + parentCourseId);
+            }
+            if (parentCourseSetId !== undefined && parentCourseSetId > 0) {
+                query = concatUrl(query, "parentCourseSetId=" + parentCourseSetId);
+            }
+
+            return openPageByPath(targetPath, '', '#/select-users' + query);
+        };
+
+        /**
+         * Method that is called when an staff enrolment should be done
+         * Param 1: the object type
+         * Param 2: the object id
+         * Param 3: the context id, e.g. catalogue id (optional)
+         */
+        var openCourseStaffEnrolment = function (courseId, catalogId, templateId, programmeId, parentCourseId, parentCourseSetId) {
+            var targetPath = '/pages/mystaffs.jsf';
+            var query="";
+            if (courseId !== undefined && courseId > 0) {
+                query = concatUrl(query, "courseId=" + courseId);
+            }
+            if (templateId !== undefined && templateId > 0) {
+                query = concatUrl(query, "templateId=" + templateId);
+            }
+            if (catalogId !== undefined && catalogId > 0) {
+                query = concatUrl(query, "catalogId=" + catalogId);
+            }
+            if (programmeId !== undefined && programmeId > 0) {
+                query = concatUrl(query, "programmeId=" + programmeId);
+            }
+            if (parentCourseId !== undefined && parentCourseId > 0) {
+                query = concatUrl(query, "parentCourseId=" + parentCourseId);
+            }
+            if (parentCourseSetId !== undefined && parentCourseSetId > 0) {
+                query = concatUrl(query, "parentCourseSetId=" + parentCourseSetId);
+            }
+
+            return openPageByPath(targetPath, query, '');
+        };
+
+        /**
+         * Method that is called when enrollmentform should be shown
+         */
+        var openEnrollmentForm = function (courseId, userId, supervisorId, registrationTypeName, objectType, catalogId, templateId, parentCourseId, parentCourseSetId, employeeId, programmeId, queryParamsString, tabOption) {
+            var targetPath = '/pages/enrolmentform.jsf';
+            var hashPath = "#!/enrol/" + courseId;
+            hashPath += "/" + userId;
+            hashPath += "/" + supervisorId; // 0 means supervisor id = 0
+            hashPath += "/" + registrationTypeName;
+            hashPath += "/" + objectType;
+            hashPath += "/" + catalogId;
+            hashPath += "/" + templateId;
+            hashPath += "/" + parentCourseId;
+            hashPath += "/" + parentCourseSetId;
+            hashPath += "/" + employeeId;
+            hashPath += "/" + programmeId;
+            if (queryParamsString) {
+                if (queryParamsString.charAt(0) !== '?') {
+                    queryParamsString = '?' + queryParamsString;
+                }
+                hashPath += queryParamsString;
+            }
+            return openPageByPath(targetPath, '', hashPath, tabOption);
+        };
+
+        function addParamToPathParams(paths, pathIdentifier, pathValue) {
+            paths.push(pathIdentifier);
+            paths.push(pathValue);
+        }
+
+        var openDescriptionPage = function (componentType, componentId, personId, selectedTab, pathParams, queryParams, tabOption) {
+            var targetPath = '/pages/description.jsf';
+            var jsfParams = [];
+            if (currentMenuId && currentMenuId > 0) {
+                jsfParams.push("menuId=" + currentMenuId);
+            }
+            if (queryParams && queryParams['operation']) {
+                if (queryParams['operation'] !== 'cancel') {
+                    jsfParams.push("operation=" + queryParams['operation']);
+                    jsfParams.push("XSRFToken=" + '');
+                } else {
+                    console.error("Unsupported course operation: " + operation);
+                    return;
+                }
+            }
+            if (jsfParams.length) {
+                targetPath += "?" + jsfParams.join("&");
+            }
+            var hashPath = '#/';
+            var pathSegments = [];
+            var componentTypePathIdentifierMap = {
+               'COURSE': 'courses',
+               'COURSE_TEMPLATE': 'coursetemplates',
+               'PROGRAMME': 'programmes',
+               'PROGRAMME_TEMPLATE': 'programmetemplates',
+               'MEDIA': 'media'
+            };
+            // COURSE_TEMPLATE Does not exist but is necesary to diferentiate courses from course templates
+
+            if (personId && personId > 0) {
+                addParamToPathParams(pathSegments, 'users', personId);
+            } else {
+                addParamToPathParams(pathSegments, 'users', '@self');
+            }
+
+            if (pathParams) {
+                if (pathParams.catalogId) {
+                    addParamToPathParams(pathSegments, 'catalogues', pathParams.catalogId);
+                }
+                if (pathParams.programmeId) {
+                    addParamToPathParams(pathSegments, componentTypePathIdentifierMap['PROGRAMME'], pathParams.programmeId);
+                }
+                if (pathParams.courseTemplateId) {
+                    addParamToPathParams(pathSegments, componentTypePathIdentifierMap['COURSE_TEMPLATE'], pathParams.courseTemplateId);
+                }
+                if (pathParams.programmeTemplateId) {
+                    addParamToPathParams(pathSegments, componentTypePathIdentifierMap['PROGRAMME_TEMPLATE'], pathParams.programmeTemplateId);
+                }
+            }
+            //Add the componentTypepathIdentifier and componentId (this will be last)
+            addParamToPathParams(pathSegments, componentTypePathIdentifierMap[componentType], componentId);
+            //Add the section/path to append after the path params
+            if (selectedTab) {
+                pathSegments.push(selectedTab);
+            }
+            //Join every path segment with '/' to include also the section
+            hashPath += pathSegments.join('https://training.education.govt.nz/');
+            //Append the queryParams for optional parameters only if they exist
+            if (queryParams && Object.keys(queryParams).length) {
+                hashPath += '?';
+                angular.forEach(queryParams, function(value, key) {
+                    if (value) {
+                        hashPath = concatUrl(hashPath, key + "=" + value);
+                    }
+                });
+            }
+            return openPageByPath(targetPath, '', hashPath, tabOption);
+        };
+
+        var openBadgePage = function (badgeId) {
+            var targetPath = '/pages/badge-description.jsf';
+            var jsfParams = [];
+            if (badgeId && badgeId > 0) {
+                jsfParams.push("badgeId=" + badgeId);
+            }
+            if (jsfParams.length) {
+                targetPath += "?" + jsfParams.join("&");
+            }
+            return openPageByPath(targetPath, '', '');
+        };
+
+        var openUtfpPage = function (mediaId, employeeId, courseId, tabOption) {
+            var targetPath = '/pages/utfp.jsf';
+            var jsfParams = [];
+            if (mediaId && mediaId > 0) {
+                jsfParams.push("mediaId=" + mediaId);
+            }
+            if (employeeId && employeeId > 0) {
+                jsfParams.push("employeeId=" + employeeId);
+            }
+            if (courseId && courseId > 0) {
+                jsfParams.push("courseId=" + courseId);
+            }
+            if (jsfParams.length) {
+                targetPath += "?" + jsfParams.join("&");
+            }
+            return openPageByPath(targetPath, '', '', tabOption);
+        }
+
+        /**
+         * Method that is called to open the suitable scorm player page
+         * @param data - an object tha contain the following fields
+         * {
+         *  isPreviewMode - true it will be opened in preview mode
+         *  wbtId - the WBT Id => number
+         *  scoId: the SCORM item id => number
+         *  openTarget - the opening mode: same-page, new-window or popup
+         *  catalogId: (optional) the catalog id => number
+         *  mediaId: (optional) the media id => number
+         *  courseId: (optional) the course id => number
+         *  plainSco: (optional) determine the integration content type for real time session data => boolean, when true => RestContentType.ITEM_SCORM
+         *              when false => RestContentType.WBT_SCORM
+         *  mediaLanguage: (optional) the media language => string
+         *  mediaAspectPadding: (optional) the percentage padding-bottom value to the IFrame => number
+         *  backhash: (optional) the position in the source page, so can return to the same position when click on back link => string
+         *  isOpenedFromSyllabus: (optional) true when open from syllabus otherwise false
+         *  popupOption: (optional) the information used for new pop-up window (i.e. width=640, height=480)
+         * }
+         *
+         */
+        var openScormPlayer = function (data) {
+            var targetPage;
+            var query = '?';
+            query += "wbtId=" + data.wbtId;
+            query += "&scoId=" + data.scoId;
+            query += data.plainSco !== undefined ?  "&plainSco=" + data.plainSco : '';
+            query += data.mediaLanguage !== undefined ?  "&mediaLanguage=" + data.mediaLanguage : '';
+            query += data.mediaAspectPadding !== undefined ?  "&mediaAspectPadding=" + data.mediaAspectPadding : '';
+            if (typeof backhash === 'undefined') {
+                data.backhash = '';
+            }
+            if (data.isPreviewMode) {
+                targetPage = 'preview-wbt-scorm-player.jsf';
+                query += data.mediaId !== undefined ?  "&mediaId=" + data.mediaId: '';
+            } else {
+                if (data.catalogId === undefined || data.catalogId === null || data.catalogId <= 0) {
+                    if (data.courseId === undefined || data.courseId === null || data.courseId <= 0) {
+                        targetPage = 'bookshelf-wbt-scorm-player.jsf';
+                        query += data.mediaId !== undefined ? "&mediaId=" + data.mediaId: '';
+                    } else {
+                        targetPage = 'wbt-scorm-player.jsf';
+                        query += "&courseId=" + data.courseId;
+                        query += data.isOpenedFromSyllabus !== undefined ? "&isOpenedFromSyllabus=" + data.isOpenedFromSyllabus : '';
+                    }
+                } else {
+                    targetPage = 'media-wbt-scorm-player.jsf';
+                    query += "&catalogId=" + data.catalogId;
+                    query += data.mediaId !== undefined ? "&mediaId=" + data.mediaId : '';
+                }
+            }
+            return openScormPopup(targetPage + query + data.backhash, data.popupOption, data.openTarget);
+        };
+
+
+        /**
+         *
+         * Method that is called to open the suitable au player page
+         * @param wbtId - the WBT Id => number
+         * @param auId: the AICC item id => number
+         * @param openMode - the opening mode: same-page, new-window or popup
+         * @param catalogId: (optional) the catalog id => number
+         * @param mediaId: (optional) the media id => number
+         * @param courseId: (optional) the course id => number
+         * @param plainAu: (optional) determine the integration content type for real time session data => boolean, when true => RestContentType.ITEM_AICC
+         *              when false => RestContentType.WBT_AICC
+         */
+        var openAiccPlayer = function (courseId, catalogId, mediaId, wbtId, auId, plainAu, openMode) {
+            var query = "?";
+            var targetPath = '/pages/media-wbt-aicc-player.jsf';
+
+            if (courseId !== undefined && courseId > 0) {
+                targetPath = '/pages/wbt-au-open.jsf';
+                query = concatUrl(query, "courseId=" + courseId);
+            }
+            if (mediaId !== undefined && mediaId > 0) {
+                query = concatUrl(query, "mediaId=" + mediaId);
+            }
+            if (catalogId !== undefined && catalogId > 0) {
+                query = concatUrl(query, "catalogId=" + catalogId);
+            }
+            if (wbtId !== undefined && wbtId > 0) {
+                query = concatUrl(query, "wbtId=" + wbtId);
+            }
+            if (auId !== undefined && auId > 0) {
+                query = concatUrl(query, "auId=" + auId);
+            }
+            if (plainAu !== undefined) {
+                query = concatUrl(query, "plainAu=" + plainAu);
+            }
+            if (openMode !== undefined) {
+                query = concatUrl(query, "openMode=" + openMode);
+            }
+
+            return openPageByPath(targetPath, query, '');
+        };
+
+        /**
+         *
+         * Method that is called to open the suitable xapi player page
+         * @param courseId: (optional) the course id => number
+         * @param catalogId: (optional) the catalog id => number
+         * @param mediaId: (optional) the media id => number
+         * @param openMode - the opening mode: same-page, new-window or popup
+         * @param isXapiPlayer: (optional) opens the player => boolean
+         */
+        var openXapiPlayer = function (courseId, catalogId, mediaId, openMode, isXapiPlayer) {
+            var query = "?";
+            var targetPath = '/pages/media-wbt-xapi-player.jsf';
+
+            if (courseId !== undefined && courseId > 0) {
+                targetPath = '/pages/wbt-xapi-open.jsf';
+                query = concatUrl(query, "courseId=" + courseId);
+            }
+            if (mediaId !== undefined && mediaId > 0) {
+                query = concatUrl(query, "mediaId=" + mediaId);
+            }
+            if (catalogId !== undefined && catalogId > 0) {
+                query = concatUrl(query, "catalogId=" + catalogId);
+            }
+            if (openMode !== undefined) {
+                query = concatUrl(query, "openMode=" + openMode);
+            }
+            if (isXapiPlayer !== undefined) {
+                query = concatUrl(query, "isXapiPlayer=" + isXapiPlayer);
+            }
+
+            return openPageByPath(targetPath, query, '');
+        };
+
+        /**
+         *
+         * Method that is called to open a specific learning path folder
+         * @param learningPathId: (optional) the programme id => number
+         * @param folderId: (optional) the folder id => number
+         */
+        var openLearningPathFolder = function (learningPathId, folderId) {
+            var query = "";
+            var targetPath = '/pages/description.jsf';
+            if(learningPathId) {
+                targetPath += '#/users/@self/programmes/' + learningPathId + '/curriculum';
+            }
+            if(folderId) {
+                query = "?";
+                query = concatUrl(query, "folderId=" + folderId);
+            }
+            return openPageByPath(targetPath, query, '');
+        }
+
+    </script>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../resources/design/css/autocomplete.mod.4.0.0.html" />
+
+    <script type="text/javascript" src="../jamescore/james.1668baa243f37499adc695c9e53f60c79e46356d.min.html"></script>
+        <script type="text/javascript" src="../resources/javascript/navi.html"></script>
+        <script type="text/javascript">
+            var appInsights = window.appInsights || function (a) {
+                function b(a) {
+                    c[a] = function () {
+                        var b = arguments;
+                        c.queue.push(function () {
+                            c[a].apply(c, b)
+                        })
+                    }
+                }
+
+                var c = {config: a}, d = document, e = window;
+                setTimeout(function () {
+                    var b = d.createElement("script");
+                    b.src = a.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js", d.getElementsByTagName("script")[0].parentNode.appendChild(b)
+                });
+                try {
+                    c.cookie = d.cookie
+                } catch (a) {
+                }
+                c.queue = [];
+                for (var f = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; f.length;) b("track" + f.pop());
+                if (b("setAuthenticatedUserContext"), b("clearAuthenticatedUserContext"), b("startTrackEvent"), b("stopTrackEvent"), b("startTrackPage"), b("stopTrackPage"), b("flush"), !a.disableExceptionTracking) {
+                    f = "onerror", b("_" + f);
+                    var g = e[f];
+                    e[f] = function (a, b, d, e, h) {
+                        var i = g && g(a, b, d, e, h);
+                        return !0 !== i && c["_" + f](a, b, d, e, h), i
+                    }
+                }
+                return c
+            }({
+                instrumentationKey: "a9f94213-9b0f-4cb4-b994-5bb508fe59d0"
+            });
+            window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length && appInsights.trackPageView();
+        </script></head><body onload="bodyloadJS();">
+<script>
+
+var utils = {
+    notifications: {
+        addPendingMessage: function() {
+            console.error("Notification Plugin is not initialized yet.")
+        }
+    }
+};
+
+</script>
+
+    <div id="notifications" tabindex="-1"></div>
+
+
+    <script>
+        var notificationAppConfig = {
+            appPath: "/notification/",
+            globalNotificationDuration: ""
+        };
+    </script>
+
+    <script src="../notification/js/notificationRegistration.html"></script>
+
+    <script>embedJavascriptResources([ 
+{ 'identifier':'angular' },
+{ 'identifier':'imc-templating-module' },
+{ 'identifier':'angular-translate' },
+{ 'identifier':'translateIMCCustomLoaderService' },
+{ 'identifier':'angular-translate-imc-loader' },
+{ 'identifier':'angular-translate-imc-decorator' },
+{ 'identifier':'angular-ui-notification' },
+{ 'path': notificationAppConfig.appPath + 'js_vendor_min/app.110473.min.js'} ], function() {
+      angular.bootstrap(document.getElementById('notification'), ['notification']);
+
+});</script>
+
+    <div id="notification">
+        <div data-ng-controller="notificationListeningController"></div>
+    </div>
+        <h1 class="outline">Education LMS</h1>
+
+        <noscript>
+            <div class="no-javascript-supported">
+                JavaScript is not enabled in your current browser. Please enable JavaScript to use the full range of functionality in this application.
+            </div>
+        </noscript>
+            <div id="content-frame" class="entire-section">
+                    <div class="contain-to-grid navigation-section" id="top-navi">
+                        <div class="imc-topbar  imc-topbar--sticky">
+                            <imc-navigation data-personal="false" data-ilp-external="/" data-has-idm="false" data-language="en-GB" data-current-menu-id="112475" data-rest-url="/commonrestapi" data-content-url="/ils" data-client-id="2" data-design-client-id="2" data-log-level="INFO" data-shopify-enabled="false" data-shopify-base-url="" data-shopify-storefront-access-token="" data-shopify-variant-user-attribute-id="" data-shopify-require-for-free="false" data-bundle-view="false" data-context-path=""></imc-navigation>
+                        </div>
+                        <!-- if sticky -> this height-wrap-container takes the same height as .imc-topbar -->
+                        <div class="topbar-height-wrap"></div>
+                    </div>
+                    <script id="imc-navigation-script" src="../microservices/navigation/index1c67.html?v=14.14.2.0.110473"></script>
+                <main class="content-section" id="content-section">
+                    <div class="full-size-section ">
+
+        <imc-breadcrumbs-tracker-wrapper data-page-identifier="media" data-language="en-GB" data-content-url="/ils" data-log-level="INFO"></imc-breadcrumbs-tracker-wrapper>
+        <script id="imc-breadcrumbs-script" src="../microservices/breadcrumbs/index1c67.html?v=14.14.2.0.110473"></script>
+
+        <script>
+            embedJavascriptResources([
+                {'identifier': 'angular'},
+                {'identifier': 'angular-translate'},
+                {'identifier': 'angular-resource'},
+                {'identifier': 'imc-filter'},
+                {'identifier': 'translateIMCCustomLoaderService'},
+                {'identifier': 'angular-translate-imc-loader'},
+                {'identifier': 'angular-translate-imc-decorator'},
+                {'identifier': 'angular-sanitize'},
+                {'identifier': 'moment'},
+                {'identifier': 'moment-timezone-with-data'},
+                {'identifier': 'angular-moment'},
+                {'identifier': 'imc-sanitize'},
+                {'identifier': 'imc-header.module'},
+                {'identifier': 'imc-subnavigation-header'},
+                {'identifier': 'imc-subnavigation-breadcrumbs'},
+                {'identifier': 'imc-subnavigation-header-service'}
+            ], function () {
+                angular.module('de.imc.mediacontentheader', [
+                    'pascalprecht.translate',
+                    'de.imc.header'
+                ]);
+                angular.module('de.imc.mediacontentheader').run(['$translate', function ($translate) {
+                    $translate.switchLanguage(function () {}, ['frontendcommon']);
+                }]);
+                angular.bootstrap(document.getElementById('mediaContentWrapper'), ['de.imc.mediacontentheader']);
+            });
+        </script>
+        <!-- HEADER BEGIN -->
+        <header id="course-header">
+            <div id="mediaContentWrapper" data-translate-cloak="any" class="angular-app-content-wrapper">
+                <div class="grid-container padding-top-12">
+                    <imc-subnavigation-breadcrumbs></imc-subnavigation-breadcrumbs>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END -->
+
+        <!-- COURSE-CONTENT BEGIN -->
+        <section id="media-top" class="catalogue-media-top-section subfloat-menu-padding padding-bottom-48">
+
+
+            <div class="grid-container">
+                <div class="grid-x">
+                    <div class="cell small-24">
+                        <div lang="English (GB)">
+                            <h1 class="catalogue-media-top-title margin-top-36 margin-bottom-14">Changing the kōrero around pornography
+                            </h1>
+                            <h5 class="catalogue-media-top-subtitle">
+                            </h5>
+
+                            <div class="margin-bottom-48">
+	                       	<span class="catalogue-media-under-title">
+	                       		<span class="icon-content-wbt"></span> Web-based training
+	                        </span>
+                                <span class="catalogue-media-under-title">
+		                    	<span class="icon-last-update"></span> 23 Mar 2023 13:10
+		                    </span>
+                                <!--  Media Conclusion button -->
+                            </div>
+                        </div>
+                        <!-- include content type specific page snippet --><a href="#" onclick="openScormPopup(&quot;media-wbtfullscreen.jsf?mediaId=1251799&amp;mediaName=Changing+the+k%C5%8Drero+around+pornography&amp;mediaLanguage=English (GB)&amp;catalogId=849811&amp;wbtPath=/ils/securedata/lVGiTHsx10lHm4HUPEie-NopNdbu8Kc0Oi5gkbx3UbitgTOOGEUrqTW99CAl-r7ZOs31DdYKnji-zIUGoCISxJbiQLCDtSPYvYjTJCwqysNv7qPJFrOX0ark4Xs1azSuF-EiFe0aYMv-XcIRrnh3Zw/story.html&amp;aspectStyle=&amp;aspectControlled=&quot;,&quot;left=100,top=200,width=800,height=600&quot;,&quot;new-window&quot;)" class="catalogue-media-download-file"><span class="icon-content-wbt catalogue-media-download-file-icon"></span><span class="catalogue-media-download-file-title catalog-media-no-subtitle">Open training</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="media-detail" tabindex="0" class="catalogue-media-detail-section">
+
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x padding-top-36 padding-bottom-54">
+                    <div class="cell large-16" id="media-features-and-description">
+                                <div id="description-output" lang="English (GB)" class="catalogue-media-description copy-text-1">
+                                    This resource&nbsp;aims to support young people to critically examine the influence of pornography on personal identity, relationships with others, and the wider wellbeing of people in society.<br/><br/><span style="color: #ff0000;">This course is provided <strong>for GUEST ACCESS</strong>. Completion of this course is <strong>NOT RECORDED</strong>&nbsp;to your learning profile. Please log in and access the certificate version of this course if you require your completion to be recorded and/or to obtain a certificate of completion.</span><p><br/><span style="color: #ff0000;">Note: This course mirrors the certificate course which is available when logged in. Minor changes to the guest course are made for navigation and usability purposes.</span></p>
+                                </div>
+                            
+                        <!-- include content type specific page snippet -->
+                    </div>
+                </div>
+            </div>
+        </section>
+                    </div>
+                </main>
+
+    <!-- FOOTER BEGIN -->
+    <footer role="contentinfo" class="footer-section hide-for-print">
+        <div class="">
+            <imc-footer data-personal="false" data-language="en-GB" data-client-id="2" data-design-client-id="2" data-rest-url="/commonrestapi" data-content-url="/ils" data-log-level="INFO"></imc-footer>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+            </div>
+            <script src="../resources/javascript/custom_scripts.html"></script>
+            
+            <script>
+                $(document).foundation();
+                $(function () {
+                    if (!Foundation.MediaQuery.atLeast("large")) {
+                        $(".is-dropdown-submenu-parent").removeClass("is-dropdown-submenu-parent");
+                    }
+                });
+            </script><script type="text/javascript">
+            /*<![CDATA[*/
+            jQuery(document).ready(function ($) {
+
+                var metas = document.getElementsByTagName("meta");
+                for (i = 0; i < metas.length; i++) {
+                    if (metas[i].getAttribute("name") == "og:description") {
+                        metas[i].setAttribute("content", abbreviateText(unescape(metas[i].getAttribute("content")), 200));
+                    }
+                }
+
+                function abbreviateText(text, length) {
+                    var abbreviated = decodeURIComponent(text);
+                    if (abbreviated.length <= length) {
+                        return text;
+                    }
+
+                    var lastWhitespaceIndex = abbreviated.substring(0, length - 1).lastIndexOf(' ');
+                    abbreviated = encodeURIComponent(abbreviated.substring(0, lastWhitespaceIndex)) + "\u2026";
+
+                    return abbreviated;
+                }
+            });
+            /*]]>*/
+        </script>
+		<!-- START 20/10/2020 Handle Vimeo Video Multimedia type for IP 14-->
+<script>
+var url = window.location.href;
+// For media and course page
+
+if (url.indexOf('coursecontent.jsf') > 0) {
+(function handleVimeo(){ // wrap everything in a self-invoking function, not to expose "times"
+  times = 50; // how many times to run
+  (function run(){
+    // do your stuff, like hide buttons or add new elements to the DOM
+        var videoElement = $('#video-player');
+        var contentTile = $('.course-content-body .course-content-tile')
+        //console.log("contentTile"+contentTile);
+        //var videoErrorLength = $('#video-player:contains("No compatible source")').length;
+        // var videoErrorLength = $('#video-player iframe').length;
+        var fileNotFound = $('span:contains("File not found")');
+        var descriptionElem = $('#description-output') || $('#content-description');
+        var description = $('#description-output').text() || $('#content-description').text();
+        var videoURL = description.substring(description.indexOf("$")+1,description.lastIndexOf("$"));
+        var doesContainVimeo = videoURL.indexOf('vimeo');
+        //console.log(doesContainVimeo);
+       // console.log(contentTile.length);
+        if ((contentTile.length) && !videoElement.length && doesContainVimeo >0){
+            //console.log('I am inside')
+            contentTile.append('<div id="video-player"><iframe src='+videoURL+' width="100%" height="700" frameborder="0" title="Vimeo Video" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"/></div>');
+            fileNotFound.hide();
+            var hideVimeoLabel = description.substring(0, description.indexOf('$'));
+            $('#content-description').text(hideVimeoLabel);
+        }
+    // recursively call the function until the DOM is fully loaded and stop after the threshold is reached, i.e. 5 seconds
+    if( --times ) // 200 * 50 = 5 seconds
+      setTimeout(run, 200);
+      //console.log(times)
+  })();
+})();
+}
+
+// For media running inside of catalogue 
+if (url.indexOf('mediacontent.jsf') > 0) {
+(function handleVimeo(){ // wrap everything in a self-invoking function, not to expose "times"
+  times = 50; // how many times to run
+  (function run(){
+    // do your stuff, like hide buttons or add new elements to the DOM
+        var videoElement = $('#video-player');
+        var contentTile = $('.course-content-body .course-content-tile')
+        var mediaTile = $('#media-top');
+        //console.log("contentTile"+contentTile);
+        //var videoErrorLength = $('#video-player:contains("No compatible source")').length;
+        // var videoErrorLength = $('#video-player iframe').length;
+        var fileNotFound = $('.content-unsupported');
+       // var contentUnsupported = $('.content-unsupported');
+		var descriptionElem = $('.catalogue-media-description:contains("vimeo")');
+		var description = $('.catalogue-media-description:contains("vimeo")').text();
+        var videoURL = description.substring(description.indexOf("$")+1,description.lastIndexOf("$"));
+        var doesContainVimeo = videoURL.indexOf('vimeo');
+        //console.log(doesContainVimeo);
+       // console.log(contentTile.length);
+        if ((contentTile.length ||  mediaTile.length) && !videoElement.length && doesContainVimeo >0){
+            //console.log('I am inside')
+             $('#media-top').append('<div id="video-player"><iframe src='+videoURL+' width="100%" height="600" frameborder="0" title="Vimeo Video" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"/></div>');
+            fileNotFound.hide();
+            //contentUnsupported.hide();
+            //$('#media-top div:contains("vimeo"):last').hide();
+            var hideVimeoLabel = description.substring(0, description.indexOf('$'));
+            $('.catalogue-media-description').text(hideVimeoLabel);
+        }
+    // recursively call the function until the DOM is fully loaded and stop after the threshold is reached, i.e. 5 seconds
+    if( --times ) // 200 * 50 = 5 seconds
+      setTimeout(run, 200);
+      //console.log(times)
+  })();
+})();
+}
+
+// For bookshelf page
+if (url.indexOf('bookshelfmedia.jsf') > 0) {
+(function handleVimeo(){ // wrap everything in a self-invoking function, not to expose "times"
+  times = 50; // how many times to run
+  (function run(){
+    // do your stuff, like hide buttons or add new elements to the DOM
+        var videoElement = $('#video-player');
+        var contentTile = $('.course-content-body .course-content-tile')
+        var mediaTile = $('#media-top');
+        //console.log("contentTile"+contentTile);
+        //var videoErrorLength = $('#video-player:contains("No compatible source")').length;
+        // var videoErrorLength = $('#video-player iframe').length;
+        var fileNotFound = $('.content-unsupported');
+        var contentUnsupported = $('.content-unsupported');
+		var descriptionElem = $('#media-top:contains("vimeo")');
+		var description = $('#media-top:contains("vimeo")').text();
+        var videoURL = description.substring(description.indexOf("$")+1,description.lastIndexOf("$"));
+        var doesContainVimeo = videoURL.indexOf('vimeo');
+        //console.log(doesContainVimeo);
+       // console.log(contentTile.length);
+        if ((contentTile.length ||  mediaTile.length) && !videoElement.length && doesContainVimeo >0){
+            //console.log('I am inside')
+             $('#media-top').append('<div id="video-player"><iframe src='+videoURL+' width="100%" height="600" frameborder="0" title="Vimeo Video" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"/></div>');
+            fileNotFound.hide();
+            contentUnsupported.hide();
+            $('#media-top div:contains("vimeo"):last').hide();
+            var hideVimeoLabel = description.substring(0, description.indexOf('$'));
+            $('#content-description').text(hideVimeoLabel);
+        }
+    // recursively call the function until the DOM is fully loaded and stop after the threshold is reached, i.e. 5 seconds
+    if( --times ) // 200 * 50 = 5 seconds
+      setTimeout(run, 200);
+      //console.log(times)
+  })();
+})();
+}
+
+<!-- END 20/10/2020 Handle Vimeo Video Multimedia type for IP 14-->
+</script>
+
+<!-- BEGIN PF: BC-1417 Global site tag (gtag.js) - Google Analytics -->
+<script async src="../../www.googletagmanager.com/gtag/jsc613?id=G-MCTJJYPJ7X"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-4FB8LD3675');
+	</script>
+
+	<script type="text/javascript">
+        (function() {
+            function reloadFonts() {
+                var link = document.createElement("link");
+                link.href = "../resources/design/css/fontsf46a.html?dmy=" + Math.random();
+                link.type = "text/css";
+                link.rel = "stylesheet";
+                document.getElementsByTagName("head")[0].appendChild(link);
+            }
+
+            var isAppleDevice = navigator.platform.match(/(Mac|iPhone|iPod|iPad)/i);
+            if (isAppleDevice) {
+                reloadFonts();
+            }
+        })();
+    </script></body>
+
+<!-- Mirrored from training.education.govt.nz/pages/mediacontent.jsf?mediaId=1251799&catalogId=849811&menuId=112475&client=external by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 May 2023 21:33:50 GMT -->
+</html>
